@@ -272,6 +272,10 @@ void readAndPrintFanRPMs(void)
                 continue;
             }
 
+            printf("Actual Speed: %.0f\n", actual_speed);
+            printf("minimum speed: %.0f\n", minimum_speed);
+            printf("maximum speed: %.0f\n", maximum_speed);
+
             float rpm = actual_speed - minimum_speed;
             if (rpm < 0.f) {
                 rpm = 0.f;
