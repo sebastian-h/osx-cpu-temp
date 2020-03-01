@@ -1,6 +1,6 @@
 
 CC     = cc
-CFLAGS = -O2 -Wall
+CFLAGS = -O0 -Wall -DEBUG -g
 INC    = -framework IOKit
 PREFIX = /usr/local
 EXEC   = osx-cpu-temp
