@@ -41,6 +41,10 @@ clib install lavoiesl/osx-cpu-temp
  * `-F` Output temperature in Fahrenheit.
  * `-f` Output fan speed.
  * `-g` Output gpu temp.
+ * `-c` Display CPU temperature (Default).
+ * `-h` Display this help.
+ 
+ If more than one of -c, -f, or -g are specified, titles will be added
 
 ## Maintainer 
 
