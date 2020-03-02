@@ -15,7 +15,8 @@
             "stopAtEntry": false,
             "environment": [],
             "externalConsole": false,
-            "MIMode": "lldb"
+            "MIMode": "lldb",
+            "targetArchitecture": "x86_64"
         }
     ]
 }
