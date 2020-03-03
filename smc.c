@@ -275,22 +275,11 @@ void readAndPrintFanRPMs(void)
             if (actual_speed < 0.f) {
                 actual_speed = 0.f;
             }
-            float pct = actual_speed / (maximum_speed - minimum_speed);
 
+            float pct = actual_speed / maximum_speed;
             pct *= 100.f;
+            
             printf("Fan %d - %s at %.0f RPM (%.0f%%)\n", i, name, actual_speed, pct);
-
-            //sprintf(key, "F%dSf", i);
-            //SMCReadKey(key, &val);
-            //printf("    Safe speed   : %.0f\n", strtof(val.bytes, val.dataSize, 2));
-            //sprintf(key, "F%dTg", i);
-            //SMCReadKey(key, &val);
-            //printf("    Target speed : %.0f\n", strtof(val.bytes, val.dataSize, 2));
-            //SMCReadKey("FS! ", &val);
-            //if ((_strtoul((char *)val.bytes, 2, 16) & (1 << i)) == 0)
-            //    printf("    Mode         : auto\n");
-            //else
-            //    printf("    Mode         : forced\n");
         }
     }
 }
